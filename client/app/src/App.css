@@ -1,0 +1,301 @@
+*
+{
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+.App
+{
+  display: flex;
+  flex-direction: row;
+  background-color: #1e212b;
+}
+
+.sideBar
+{
+  width: 30vw;
+  height: 100vh;
+  text-align: center;
+  border-right: 3px solid #80808045;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.sideBar form
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4%;
+}
+
+.sideBar form input
+{
+  width: 70%;
+  outline: none;
+  border: none;
+  padding: 10px;
+  color: #808080;
+  background: linear-gradient(145deg, #1e212b, #292d38);
+  box-shadow: 3px 3px 10px #0d0d0d, -3px -3px 10px #1e212b;
+  transition: all 0.3s;
+}
+
+.sideBar form input::placeholder
+{
+  color: #808080;
+  transition: all 0.3s;
+}
+
+.sideBar form input:hover::placeholder
+{
+  color: rgb(0, 242, 255) ;
+}
+
+.sideBar form button
+{
+  width: 30%;
+  border-radius: 0px;
+  border: none;
+  color: #717172;
+  cursor: pointer;
+  background: linear-gradient(55deg, #292d38 ,#1e212b);
+  box-shadow: 0px 3px 3px #0d0d0db8, 0px 0px 0px #1e212b;
+  transition: all 0.3s;
+}
+
+.sideBar form button:hover
+{
+  color: rgb(0, 183, 255);
+}
+
+.sideBar form button:active
+{
+  box-shadow: inset 3px 3px 10px #0d0d0d, inset -3px -3px 10px #1e212b;
+  color: rgb(0, 146, 243);
+}
+
+.userDiv
+{
+  background-color: red;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(55deg, #292d38 ,#1e212b);
+  box-shadow: 0px 3px 3px #0d0d0db8, 0px -3px 3px #1e212b;
+  margin-bottom: 2%;
+}
+
+.userPicture
+{
+  width: 2.5em;
+  height: 88%;
+  border-radius: 50%;
+  margin-left: 2%;
+  background: linear-gradient(55deg, rgba(0, 146, 243, 0.789) ,rgba(0, 146, 243, 0.745));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userPicture p
+{
+  color: #0d0d0d;
+  text-shadow: 3px 3px 10px #0d0d0d, -1px -1px 1px #1e212b;
+  
+}
+
+.userName
+{
+  margin-left: 5%;
+  color: rgb(0, 146, 243);
+  text-shadow: 3px 3px 10px #0d0d0d, -1px -1px 2px rgb(0, 146, 243);
+  
+}
+
+.chat
+{
+  width: 70vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chatInfo
+{
+  background-color: red;
+  width: 99%;
+  height: 2.35em;
+  background: linear-gradient(145deg, #1e212b, #292d38);
+  box-shadow: 0px 3px 3px #0d0d0db0;
+  text-align: start;
+  margin-bottom: 2%;
+}
+
+.chatInfo h2
+{
+  margin-top: 0.5%;
+  margin-left: 5%;
+  color: rgb(0, 146, 243);
+  text-shadow: 3px 3px 10px #0d0d0d, -1px -1px 3px rgb(0, 146, 243);
+  font-size: clamp(5px, 2.5em, 25px);
+}
+
+.chatMessages
+{
+  width: 99%;
+  height: 88%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.userInOutMessage
+{
+  background-color: rgba(0, 0, 0, 0.485);
+  color: #808080;
+  padding: 1% 2%;
+  border-radius: 20px;
+  text-align: center;
+  margin-right: 30%;
+  margin-left: 30%;
+  margin-bottom: 0.7%;
+  overflow: hidden;
+}
+
+.myMessage
+{
+  text-align: start;
+  margin-left: 40%;
+  border-radius: 10px;
+  background: linear-gradient(145deg, rgb(0, 134, 244), rgb(0, 104, 189));
+  box-shadow: 3px 3px 10px #0d0d0d, -3px -3px 10px #1e212b;
+  margin-bottom: 0.7%;
+}
+
+.msg
+{
+  color: #343232;
+  text-shadow: 1px 1px 5px #0d0d0d, -1px -1px 1px #0d0d0d;
+  margin-left: 2.5%;
+  margin-top: 1.5%;
+  word-wrap: break-word;
+}
+
+.msgDate
+{
+  color: #343232;
+  text-shadow: 3px 3px 10px #0d0d0d, -1px -1px 1px #262424;
+  margin-right: 2%;
+  text-align: right;
+  font-size: 11px;
+}
+
+.othersMessage
+{
+  text-align: start;
+  margin-right: 40%;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #1e212b, #292d38);
+  box-shadow: 3px 3px 10px #0d0d0d, -3px -3px 10px #1e212b;
+  margin-bottom: 0.7%;
+  
+}
+
+.othersMsgName
+{
+  color: rgb(141, 141, 141);
+  text-shadow: 3px 3px 10px #0d0d0d, -1px -1px 1px rgb(0, 146, 243);
+  margin-right: 4%;
+  text-align: end;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 1% 2%;
+  padding-left: 3.5%;
+}
+
+.othersMsg
+{
+  color: rgb(141, 141, 141);
+  text-shadow: 3px 3px 10px #0d0d0d, -1px -1px 1px rgb(0, 146, 243);
+  margin-left: 4%;
+  word-wrap: break-word;
+  padding-right: 2%;
+  
+}
+
+.othersMsgDate
+{
+  color: #808080;
+  text-shadow: 3px 3px 10px #0d0d0d, -1px -1px 1px rgb(0, 146, 243);
+  margin-right: 4%;
+  text-align: right;
+  font-size: 11px;
+
+}
+.chat form
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.chat form input
+{
+  width: 65%;
+  border: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px ;
+  outline: none;
+  padding: 10px 10px;
+  color: #808080;
+  background: linear-gradient(145deg, #1e212b, #292d38);
+  box-shadow: 0px 3px 10px #0d0d0d, -3px -3px 10px #1e212b;
+  transition: all 0.3s;
+}
+
+.chat form input::placeholder
+{
+  color: #808080;
+  transition: all 0.3s;
+}
+
+.chat form input:hover::placeholder
+{
+  color: rgb(0, 242, 255);
+
+}
+
+.chat form button
+{
+  width: 25%;
+  border: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 10px 0px;
+  color: #808080;
+  background: linear-gradient(145deg, #292d38, #1e212b);
+  box-shadow: 3px 3px 10px #0d0d0d, 0px -3px 10px #1e212b;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.chat form button:hover
+{
+  color: rgb(0, 183, 255);
+
+}
+
+.chat form button:active
+{
+  box-shadow: inset 3px 3px 10px #0d0d0d, inset -3px -3px 10px #1e212b;
+  color: rgb(0, 146, 243);
+
+}

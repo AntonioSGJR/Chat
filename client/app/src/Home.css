@@ -1,0 +1,84 @@
+*
+{
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+.homeDiv
+{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5em;
+  align-items: center;
+  background-color: #1e212b;
+}
+
+.homeH1
+{
+  color: rgb(0, 146, 243);
+  text-shadow: 3px 3px 10px #0d0d0d, -1px -1px 3px rgb(0, 146, 243);
+  font-size: 90px;
+}
+
+.homeForm
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.homeInput
+{
+  outline: none;
+  width: clamp(150px,30vw , 350px);
+  border-radius: 20px;
+  padding: 8px 15px;
+  border: none;
+  color: #808080;
+  background: linear-gradient(145deg , #1e212b, #292d38);
+  box-shadow: 5px 5px 10px #0d0d0d, -5px -5px 10px #1e212b;
+  transition: all 0.3s;
+}
+
+.homeInput::placeholder
+{
+  color: #808080;
+}
+
+.homeInput:hover::placeholder
+{
+  color: rgb(0, 183, 255);
+}
+
+.homeButton
+{
+  border: none;
+  border-radius: 20px;
+  padding: 8px 15px;
+  color: #717172;
+  background: linear-gradient(145deg,#292d38 ,#1e212b);
+  box-shadow: 3px 3px 10px #0d0d0d, -3px -3px 10px #1e212b;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.homeButton:hover
+{
+  color: rgb(0, 183, 255);
+}
+
+.homeButton:active
+{
+  box-shadow: inset 3px 3px 10px #0d0d0d, inset -3px -3px 10px #1e212b;
+  color: rgb(0, 146, 243);
+}
+
+.homeForm Link
+{
+  cursor: default;
+}
